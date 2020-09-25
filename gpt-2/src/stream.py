@@ -8,10 +8,10 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 import sys
 
-consumer_key= '9C0nedFj98hB83LQCsW5xIDvZ' # Don't have these in the final
-consumer_secret= 'J60uZyJ2JhZe0POGTdM7uUD6hno8kia42yg8TNBCIHHoUFS8l5'# Don't have these in the final
-access_token= '1301167716456374272-F8USe9k5ztXa71US6qf3H5xlQvcx8Q'# Don't have these in the final
-access_token_secret= 'jpsmsY6hddCUkzEIfyKLrGnOqk8nLSc3zMaWP9ugSpfYE'# Don't have these in the final
+consumer_key= 'hi' # Don't have these in the final
+consumer_secret= 'hi'# Don't have these in the final
+access_token= 'hi'# Don't have these in the final
+access_token_secret= 'hi'# Don't have these in the final
 
 class StreamListener(tweepy.StreamListener):
     def on_status(self, status):
@@ -33,7 +33,7 @@ class StreamListener(tweepy.StreamListener):
                 for c in remove_characters:
                     text = text.replace(c," ")
 
-                return status.user.screen_name, status.id_str, text, stream.disconnect()
+                return print(status.user.screen_name, status.id_str, text), stream.disconnect()
 
     def on_error(self, status_code):
         print("Encountered streaming error (", status_code, ")")

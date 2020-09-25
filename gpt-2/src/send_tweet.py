@@ -13,10 +13,10 @@ times = exec(open("src/stream.py").read())
 
 print(times)
 
-consumer_key= '9C0nedFj98hB83LQCsW5xIDvZ' # Don't have these in the final
-consumer_secret= 'J60uZyJ2JhZe0POGTdM7uUD6hno8kia42yg8TNBCIHHoUFS8l5'# Don't have these in the final
-access_token= '1301167716456374272-F8USe9k5ztXa71US6qf3H5xlQvcx8Q'# Don't have these in the final
-access_token_secret= 'jpsmsY6hddCUkzEIfyKLrGnOqk8nLSc3zMaWP9ugSpfYE'# Don't have these in the final
+consumer_key= 'hi' # Don't have these in the final
+consumer_secret= 'hi'# Don't have these in the final
+access_token= 'hi'# Don't have these in the final
+access_token_secret= 'hi'# Don't have these in the final
 
 # Using the keys, setup the authorization
 authorization = tweepy.OAuthHandler(consumer_key, consumer_secret)

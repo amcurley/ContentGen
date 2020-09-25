@@ -5,7 +5,7 @@ import json
 import os
 import numpy as np
 import tensorflow as tf
-import twitter
+import send_tweet
 import model, sample, encoder
 
 tweets = """
@@ -129,7 +129,7 @@ def interact_model(
                     text = text.split("\n")
 
                     # This is where my twitter bot script will run!
-                    twitter.update_status(text[2])
+                    send_tweet.update_status(text[2])
                     print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
                     print(text)
             print("=" * 80)
