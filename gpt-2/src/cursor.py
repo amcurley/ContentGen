@@ -14,10 +14,14 @@ authorization.set_access_token(access_token, access_token_secret)
 twitter = tweepy.API(authorization, wait_on_rate_limit=True)
 
 def input():
+    search_words = "boston celtics -filter:retweets"
     tweets = tweepy.Cursor(twitter.search,
-                           q = 'food',
+                           q = search_words,
                            lang='en').items(1)
+    # for tweet in tweets:
+    for tweet in tweets:
+        return tweet.text, tweet.id, tweet.user.screen_name
 
-    return print([tweet.text for tweet in tweets])
+    # return print([tweet.text for tweet in tweets])
 
 input()

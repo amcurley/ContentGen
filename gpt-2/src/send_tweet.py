@@ -8,11 +8,6 @@ from tweepy import OAuthHandler
 from tweepy import Stream
 import sys
 
-
-times = exec(open("src/stream.py").read())
-
-print(times)
-
 consumer_key= 'hi' # Don't have these in the final
 consumer_secret= 'hi'# Don't have these in the final
 access_token= 'hi'# Don't have these in the final
@@ -25,6 +20,6 @@ authorization.set_access_token(access_token, access_token_secret)
 twitter = tweepy.API(authorization)
 
 
-def update_status(text):
-    status = twitter.update_status(text)
+def update_status(text, id):
+    status = twitter.update_status(text, in_reply_to_status_id=id)
     return status

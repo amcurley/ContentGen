@@ -7,6 +7,11 @@ import numpy as np
 import tensorflow as tf
 import send_tweet
 import model, sample, encoder
+import cursor
+import time
+import streamlit as st
+
+st.title('Visualizing GPT-2')
 
 tweets = """
 
@@ -42,13 +47,47 @@ tweets = """
 
 """
 
+boston = """
+
+1: The boston celtics are playing tonight.
+2: They are horrible.
+
+1: The boston celtics are favourites to win tonight.
+2: They will lose.
+
+1: The boston celtics are a horrible team
+2: They are the worst team in the NBA
+
+1: The Boston Celtics are playing tonight
+2: They will lose because they suck.
+
+1: The Boston Celtics are the favourites to win.
+2: They will lose because they suck.
+
+1: Who is the best team in the NBA?
+2: The Celtics are the worst.
+
+1: What do you think about the Boston Celtics?
+2: They are horrible and will lose
+
+1: Boston Celtics
+2: They are horrible.
+
+1: The Boston Celtics
+2: They are the worst team ever!
+
+1: boston celtics
+2: They are terrible.
+
+"""
+
 def interact_model(
     model_name='774M',
     seed=None,
     nsamples=1,
     batch_size=1,
     length=40,
-    temperature=1,
+    temperature=0.7,
     top_k=0,
     top_p=1,
     models_dir='models',
@@ -104,15 +143,24 @@ def interact_model(
         ckpt = tf.train.latest_checkpoint(os.path.join(models_dir, model_name))
         saver.restore(sess, ckpt)
 
+
+
         while True:
             # Twitter input will go here
-            raw_text = input("Tweet >>> ")
-            while not raw_text:
+            # raw_text = input("Tweet >>> ")
+            raw_text, id, user = cursor.input()
+            st.markdown("**Input Tweet: **" + raw_text)
+            time.sleep(25)
+            print(raw_text)
+            # while not raw_text:
                 # Twitter input will go here
-                print('Prompt should not be empty!')
+                # print('Prompt should not be empty!')
                 # Twitter input will go here
-                raw_text = input("Tweet >>> ")
-            raw_text = tweets + "1: " + raw_text + "\n2: "
+                # raw_text = input("Tweet >>> ")
+                # raw_text = cursor.input()
+                # print(raw_test)
+                # time.sleep(25)
+            raw_text = boston + "1: " + raw_text + "\n2: "
             context_tokens = enc.encode(raw_text)
             generated = 0
             for _ in range(nsamples // batch_size):
@@ -127,12 +175,24 @@ def interact_model(
                     text = text.replace('1: ', '')
                     text = text.replace('2: ', '')
                     text = text.split("\n")
+                    for xj, t in enumerate(text):
+                        if t == None:
+                            text.pop(xj)
 
+                    # Progress bar streamlit
+                    my_bar = st.progress(0)
+                    for percent_complete in range(100):
+                        time.sleep(0.1)
+                        my_bar.progress(percent_complete + 1)
+
+                    st.markdown("**Response Tweet: **" + text[2])
                     # This is where my twitter bot script will run!
-                    send_tweet.update_status(text[2])
+                    send_tweet.update_status(f"@{user} { text[2]}", id)
+                    print('Tweeted the Response')
                     print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
                     print(text)
             print("=" * 80)
+
 
 if __name__ == '__main__':
     fire.Fire(interact_model)
