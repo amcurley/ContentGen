@@ -10,7 +10,7 @@ def gen():
 
     a = random.choice(os.listdir(folder))
 
-    file = folder + "/" + a
+    file = folder + "/" + a #File to selected image
 
     image = Image.open(file)
 
@@ -18,20 +18,17 @@ def gen():
     st.markdown("Click Generate to Get Your Face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
+        st.title('Download Generated Face')
+        st.markdown('Click to Download')
 
-    else:
-        pass
-
-
-    st.title('Download Generated Face')
-    st.markdown('Click to Download')
-    if st.button('Download'):
+        # Give the user a link to download their image
         def get_image_download_link(img, file_label='File'):
             with open(img, 'rb') as f:
                 data = f.read()
             bin_str = base64.b64encode(data).decode()
             href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(img)}">Download {file_label}</a>'
             return href
+        # CLickable link for the downloadable image.
         st.markdown(get_image_download_link(file, 'Generated Face'), unsafe_allow_html=True)
     else:
         pass
