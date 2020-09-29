@@ -13,41 +13,9 @@ import time
 import streamlit as st
 import sys
 
-# st.title('Visualizing GPT-2')
+# def text_input(text):
+#     return text
 
-boston = """
-
-1: The boston celtics are playing tonight.
-2: They are horrible.
-
-1: The boston celtics are favourites to win tonight.
-2: They will lose.
-
-1: The boston celtics are a horrible team
-2: They are the worst team in the NBA
-
-1: The Boston Celtics are playing tonight
-2: They will lose because they suck.
-
-1: The Boston Celtics are the favourites to win.
-2: They will lose because they suck.
-
-1: Who is the best team in the NBA?
-2: The Celtics are the worst.
-
-1: What do you think about the Boston Celtics?
-2: They are horrible and will lose
-
-1: Boston Celtics
-2: They are horrible.
-
-1: The Boston Celtics
-2: They are the worst team ever!
-
-1: boston celtics
-2: They are terrible.
-
-"""
 def interact_model(
     model_name='124M',
     seed=None,
@@ -79,8 +47,10 @@ def interact_model(
      :models_dir : path to parent folder containing model subfolders
      (i.e. contains the <model_name> folder)
     """
-    st.title('Use GPT-2')
-    st.markdown("Click 'Run GPT-2' down below to have Abby tweet!")
+
+    st.title("Generate Your Own Text!")
+    st.markdown("Click the button down below to generate your own text.")
+
     if st.button('Run GPT-2'):
         models_dir = os.path.expanduser(os.path.expandvars(models_dir))
         if batch_size is None:
@@ -114,12 +84,10 @@ def interact_model(
             saver.restore(sess, ckpt)
 
             while True:
-                raw_text = st.text_input('Start typing: ', )
-                print(raw_text)
-                st.markdown("**Input Text: **" + raw_text)
-
-                # raw_text = boston + "1: " + raw_text + "\n2: "
-                raw_text = "1: " + raw_text + "\n2: "
+                raw_text = input("Model prompt >>> ")
+                while not raw_text:
+                    print('Prompt should not be empty!')
+                    raw_text = input("Model prompt >>> ")
                 context_tokens = enc.encode(raw_text)
                 generated = 0
                 for _ in range(nsamples // batch_size):
@@ -129,23 +97,9 @@ def interact_model(
                     for i in range(batch_size):
                         generated += 1
                         text = enc.decode(out[i])
-
-                        # Response cleaning
-                        text = text.replace('1: ', '')
-                        text = text.replace('2: ', '')
-                        text = text.split("\n")
-                        for xj, t in enumerate(text):
-                            if t == None:
-                                text.pop(xj)
-
-                        st.markdown("**GPT-2 Response: **" + text[2])
-                        # This is where my twitter bot script will run!
-                        # send_tweet.update_status(f"@{user} { text[2]}", id)
-                #         print('Tweeted the Response')
-                #         print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
-                #         print(text)
-                # print("=" * 80)
-                        sys.exit()
+                        print("=" * 40 + " SAMPLE " + str(generated) + " " + "=" * 40)
+                        print(text)
+                print("=" * 80)
 
 
 def write():
@@ -161,6 +115,6 @@ def write():
         top_p=1,
         models_dir='gpt/models')
 
+
 if __name__ == '__main__':
-    # if st.button('Run GPT-2'):
     fire.Fire(interact_model)
