@@ -48,7 +48,6 @@ boston = """
 2: They are terrible.
 
 """
-
 def interact_model(
     model_name='774M',
     seed=None,
@@ -116,6 +115,7 @@ def interact_model(
 
             while True:
                 raw_text = st.text_input('Start typing: ', )
+                print(raw_text)
                 st.markdown("**Input Text: **" + raw_text)
 
                 # raw_text = boston + "1: " + raw_text + "\n2: "

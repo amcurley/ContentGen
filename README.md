@@ -10,12 +10,8 @@ The influencer marketing industry is expected to be worth 15 billion dollars by 
 ## **Project Layout**
 
 ### Creating the Computer Generated Influncer: 
-There will be two parts of this project. The first part will be the computer generated influencer. I will be utilizing two [StyleGan2's](https://github.com/NVlabs/stylegan2) from NVIDIA. One will be for the face and the other will be for the body of the person. After those are generated I will merge the two together creating a final Instagram post. I can then take this person and put them in [vid2vid](https://github.com/NVIDIA/vid2vid) and create a generated dance much like the one here: [TikTok Video](https://vm.tiktok.com/ZMJD8tqGu/).
-
-Down below is the flowchat on how this process will work.
-
-![](./assets/01_01_GanStructure_01_01.png)    
-
+There will be two parts of this project. The first part will be the computer generated influencer. I will be utilizing [StyleGan2](https://github.com/NVlabs/stylegan2) from NVIDIA. One will be for the face and the other will be for the body of the person. After those are generated I will merge the two together creating a final Instagram post. I can then take this person and put them in [vid2vid](https://github.com/NVIDIA/vid2vid) and create a generated dance much like the one here: [TikTok Video](https://vm.tiktok.com/ZMJD8tqGu/).
+  
 
 ### Creating the Tweet Generator:
 Onto the second part of the project. This step will be utilizing a Twitter bot to stream live tweets about a certain topic which will be art. The bot will feed the tweets in GPT-2 and then GPT-2 will be generate a response to that tweet and comment that resonspe back to the original tweet. Since this influencer will be interested in art I hope she can build influencer within this community over time evenually leading up to the ability to create and sell her own art.

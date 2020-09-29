@@ -21,5 +21,7 @@ twitter = tweepy.API(authorization)
 
 
 def update_status(text, id):
-    status = twitter.update_status(text, in_reply_to_status_id=id)
+    status = twitter.update_status(text,
+    # in_reply_to_status_id=id
+    )
     return status
