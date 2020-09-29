@@ -6,8 +6,8 @@ import tensorflow as tf
 # import send_tweet
 # import model, sample, encoder
 import gpt.src.model as model
-# import gpt.src.sample as sample
-# import gpt.src.encoder as encoder
+import gpt.src.sample as sample
+import gpt.src.encoder as encoder
 # # import cursor
 import time
 import streamlit as st
