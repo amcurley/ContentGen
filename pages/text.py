@@ -6,9 +6,9 @@ import tensorflow as tf
 # import send_tweet
 # import model, sample, encoder
 import gpt.src.model as model
-import gpt.src.sample as sample
-import gpt.src.encoder as encoder
-# import cursor
+# import gpt.src.sample as sample
+# import gpt.src.encoder as encoder
+# # import cursor
 import time
 import streamlit as st
 import sys
@@ -49,7 +49,7 @@ boston = """
 
 """
 def interact_model(
-    model_name='774M',
+    model_name='124M',
     seed=None,
     nsamples=1,
     batch_size=1,
@@ -151,7 +151,7 @@ def interact_model(
 def write():
     """Method used to bring page into the app.py file"""
     with st.spinner("Loading ..."):
-        gen = interact_model(model_name='774M',
+        gen = interact_model(model_name='124M',
         seed=None,
         nsamples=1,
         batch_size=1,

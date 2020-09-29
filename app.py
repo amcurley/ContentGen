@@ -19,9 +19,7 @@ def main():
     """Main Function of the App"""
     PAGES = {
         'Home': pages.home,
-        # 'Home': home_app(),
         'GAN': pages.gan,
-        # 'GPT-2': interact_model()
         'GPT-2': pages.text
     }
     st.sidebar.title('Navigation')
@@ -40,5 +38,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # if st.button('GPT-2'):
-    #     fire.Fire(interact_model)
