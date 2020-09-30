@@ -6,7 +6,7 @@ import awesome_streamlit as ast
 
 
 def gen():
-    folder = r'/Users/aidancurley/Documents/dsir/personal/MeetAbby/faces'
+    folder = r'/Users/aidancurley/Documents/dsir/personal/ContentGen/faces'
 
     a = random.choice(os.listdir(folder))
 

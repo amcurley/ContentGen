@@ -22,7 +22,7 @@ def main():
         'Home': pages.home,
         'GAN': pages.gan,
         'GPT-2': pages.text,
-        "Blog Post Generator": pages.aidan
+        "Blog Post Generator": pages.blog
     }
     st.sidebar.title('Navigation')
     selection = st.sidebar.radio("Select Your Page", list(PAGES.keys()))
