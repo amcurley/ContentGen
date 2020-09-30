@@ -14,7 +14,7 @@ import gpt.src.sample as sample
 import pages.gan
 import pages.home
 import pages.text
-import pages.aidan
+import pages.blog
 
 def main():
     """Main Function of the App"""
@@ -22,7 +22,7 @@ def main():
         'Home': pages.home,
         'GAN': pages.gan,
         'GPT-2': pages.text,
-        "aidan": pages.aidan
+        "Blog Post Generator": pages.aidan
     }
     st.sidebar.title('Navigation')
     selection = st.sidebar.radio("Select Your Page", list(PAGES.keys()))

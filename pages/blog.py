@@ -13,8 +13,6 @@ import sys
 from streamlit import caching
 caching.clear_cache()
 
-
-
 arg = """
 Title: EMBARRASSING STORIES FROM MY TRAVELS
 Body: I visited Argentina for the first time the year before I started working as a lawyer in New York City. Up until that point, my Spanish vocabulary consisted of very basic words I learned and strung together while visiting Spain. It was in Barcelona, in between tapas and wine, that I learned some phrases that kept me afloat in more rural areas.
@@ -80,6 +78,7 @@ def interact_model(input_text,
     # input_text
 ):
     if st.button('Run GPT-2'):
+        st.markdown("Body Text:")
         models_dir = os.path.expanduser(os.path.expandvars(models_dir))
         if batch_size is None:
             batch_size = 1
@@ -136,9 +135,25 @@ def text_input(text):
 def write():
     """Method used to bring page into the app.py file"""
     with st.spinner("Loading ..."):
-        st.title("Generate Your Own Text!")
-        st.markdown("Enter some text down below and then hit run!")
-        hmm = text_input(st.text_input("Input some text..."))
+        st.title("Generate Your Blog Post!")
+        st.markdown(
+        """
+        **Tutorial:**
+
+        - Enter the title of your blog post below.
+        - Click enter/return
+        - Click "Generated Your Blog Post" (this may take around 20 seconds to generate)
+        - Boom! You now have a body for your blog post.
+
+        **Caution:** This model was trained on data from the internet
+        so there might be bias and facutal inaccuracies. If you are not happy with the result generated just click the button again!
+
+        These blogs will not be perfect but they serve as a solid starting ground for anyone who is having trouble with writers block.
+
+        Enjoy "writing"
+
+        """)
+        hmm = text_input(st.text_input("Enter Title Here"))
         texter = interact_model(hmm, model_name='124M',
         seed=None,
         nsamples=1,
