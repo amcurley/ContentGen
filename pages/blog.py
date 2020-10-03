@@ -25,7 +25,7 @@ def interact_model(box_selection, input_text,
     top_p=1,
     models_dir='gpt/models',
 ):
-    if st.button('Run GPT-2'):
+    if st.button('Generate Your Blog Post'):
         st.markdown("Body Text:")
         models_dir = os.path.expanduser(os.path.expandvars(models_dir))
         if batch_size is None:
@@ -90,44 +90,22 @@ def text_input(text):
 
 # Selecting one of the choices
 def boxes():
-    option = st.selectbox('Select one example topic below!',
+    option = st.selectbox('Select One Example Topic Below',
     ('Choose a Topic', 'Argentina', 'Technology', 'Boston Celtics', 'Hummus', "Democrat",
      'Republican'))
 
     if option == 'Choose a Topic':
-        message = ""
-    elif option == 'Argentina':
-        f = open('./pages/topics/argentina.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
-    elif option == 'Technology':
-        f = open('./pages/topics/technology.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
-    elif option == 'Boston Celtics':
-        f = open('./pages/topics/boston.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
-    elif option == 'Hummus':
-        f = open('./pages/topics/hummus.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
-    elif option == 'Democrat':
-        f = open('./pages/topics/democrats.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
-    elif option == 'Republican':
-        f = open('./pages/topics/republican.txt', "r" ) # I will need a few .txt files
-        message = f.read()
-        return message
+        return " "
     else:
-        return message
+        option = option.replace(' ', '-').lower()
+        f = open(f'./pages/topics/{option}.txt', "r")
+        return f.read()
 
 # Writing this to steamlit
 def write():
     """Method used to bring page into the app.py file"""
     with st.spinner("Loading ..."):
-        st.title("Generate Your Blog Post!")
+        st.title("Generate Your Own Blog Post")
         st.markdown(
         """
         **Caution:** This model was trained on data from the internet
@@ -141,7 +119,7 @@ def write():
         4. Click "Generated Your Blog Post" (this may take around 20 seconds to generate)
         5. Boom! You now have a body for your blog post.
 
-        These blogs will not be perfect but they serve as a solid starting ground for anyone who is having trouble with writers block. This will generate a 300 word body of text.
+        These blogs will not be perfect but they serve as a solid starting ground for anyone who is having trouble with writers block. This will generate a 300 word body of text that you can now use and edit to your liking!
 
         Enjoy "writing"
 

@@ -14,7 +14,7 @@ def gen():
 
     image = Image.open(file)
 
-    st.title('Generate Faces')
+    st.title('Person Generation')
     st.markdown("Click Generate to Get Your Face!")
     if st.button('Generate'):
         st.image(image, use_column_width=True)
