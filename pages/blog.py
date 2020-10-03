@@ -88,27 +88,51 @@ def text_input(text):
         text = ' '
     return text
 
+# Selecting one of the choices
 def boxes():
     option = st.selectbox('Select one example topic below!',
-    ('Choose a Topic', 'Argentina', 'Random'))
+    ('Choose a Topic', 'Argentina', 'Technology', 'Boston Celtics', 'Hummus', "Democrat",
+     'Republican'))
 
     if option == 'Choose a Topic':
         message = ""
     elif option == 'Argentina':
-        f = open('./pages/argentina.txt', "r" ) # I will need a few .txt files
+        f = open('./pages/topics/argentina.txt', "r" ) # I will need a few .txt files
         message = f.read()
+        return message
+    elif option == 'Technology':
+        f = open('./pages/topics/technology.txt', "r" ) # I will need a few .txt files
+        message = f.read()
+        return message
+    elif option == 'Boston Celtics':
+        f = open('./pages/topics/boston.txt', "r" ) # I will need a few .txt files
+        message = f.read()
+        return message
+    elif option == 'Hummus':
+        f = open('./pages/topics/hummus.txt', "r" ) # I will need a few .txt files
+        message = f.read()
+        return message
+    elif option == 'Democrat':
+        f = open('./pages/topics/democrats.txt', "r" ) # I will need a few .txt files
+        message = f.read()
+        return message
+    elif option == 'Republican':
+        f = open('./pages/topics/republican.txt', "r" ) # I will need a few .txt files
+        message = f.read()
+        return message
     else:
-        message = ""
+        return message
 
-    return message
-
-
+# Writing this to steamlit
 def write():
     """Method used to bring page into the app.py file"""
     with st.spinner("Loading ..."):
         st.title("Generate Your Blog Post!")
         st.markdown(
         """
+        **Caution:** This model was trained on data from the internet
+        so there might be bias and facutal inaccuracies. If you are not happy with the results that were generated just click the button again!
+
         **Tutorial:**
 
         1. Choose one of the selected topics. If you do not see a topic that you are interested in just move onto step 2.
@@ -117,17 +141,15 @@ def write():
         4. Click "Generated Your Blog Post" (this may take around 20 seconds to generate)
         5. Boom! You now have a body for your blog post.
 
-        **Caution:** This model was trained on data from the internet
-        so there might be bias and facutal inaccuracies. If you are not happy with the result generated just click the button again!
-
-        These blogs will not be perfect but they serve as a solid starting ground for anyone who is having trouble with writers block.
+        These blogs will not be perfect but they serve as a solid starting ground for anyone who is having trouble with writers block. This will generate a 300 word body of text.
 
         Enjoy "writing"
 
         """)
         box_selection = boxes()
         hmm = text_input(st.text_input("Enter Title Here"))
-        texter = interact_model(box_selection, hmm, model_name='124M',
+        texter = interact_model(box_selection, hmm,
+        model_name='124M',
         seed=None,
         nsamples=3,
         batch_size=1,

@@ -5,11 +5,11 @@ import base64
 
 
 def home_app():
-    st.title('Project MeetAbby')
+    st.title('Project ContentGen')
 
     st.write("""
 
-    Welcome to the [MeetAbby](https://github.com/amcurley/MeetAbby) project. The goal of this project is to display the possibilties of AI generated content.
+    Welcome to the [ContentGen](https://github.com/amcurley/ContentGen) project. The goal of this project is to display the possibilties of AI generated content.
 
     I believe content generation such as automatic tweets, generated blog posts, and fake influencers are the way of the future.
 
