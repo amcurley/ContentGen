@@ -1,1 +1,27 @@
+Pages used in topics
+
+Programming
+https://en.wikipedia.org/wiki/Android_software_development
 https://en.wikipedia.org/wiki/Data_science#:~:text=Data%20science%20is%20a%20%22concept,domain%20knowledge%20and%20information%20science.
+https://en.wikipedia.org/wiki/IOS_SDK
+https://en.wikipedia.org/wiki/JavaScript
+https://en.wikipedia.org/wiki/Machine_learning
+https://en.wikipedia.org/wiki/Computer_programming
+https://en.wikipedia.org/wiki/Software_engineering
+
+Science
+https://en.wikipedia.org/wiki/Biotechnology
+https://en.wikipedia.org/wiki/Climate_change
+https://en.wikipedia.org/wiki/Mathematics
+https://en.wikipedia.org/wiki/Neuroscience
+https://en.wikipedia.org/wiki/Psychology
+
+
+
+
+https://en.wikipedia.org/wiki/Boston_Celtics
+https://theblondeabroad.com/ultimate-budget-travel-guide-for-argentina/
+https://en.wikipedia.org/wiki/Technology
+https://en.wikipedia.org/wiki/Hummus
+https://en.wikipedia.org/wiki/Democratic_Party_(United_States)
+https://en.wikipedia.org/wiki/Republican_Party_(United_States)
