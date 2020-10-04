@@ -100,7 +100,11 @@ def boxes():
      'Culture', 'Food', 'Langauge', 'Makers', 'Outdoors', 'Pets', 'Philosophy',
      'Sports', 'Style', 'Travel', 'Crime', '====================================================', # These will have to leave
 
+     # Equality
+     'Accessibility', 'Disability', 'Equality', 'Feminism', 'LGBTG+', 'Race',
+     '====================================================',
 
+     # Programming
      'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript',
      'Machine Learning', 'Programming', 'Software Engineering',
 

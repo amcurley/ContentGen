@@ -1,6 +1,6 @@
 Pages used in topics
 
-Arts & Entertainment
+Arts & Entertainment:
 https://en.wikipedia.org/wiki/Art
 https://en.wikipedia.org/wiki/Book
 https://en.wikipedia.org/wiki/Comics
@@ -17,7 +17,7 @@ https://en.wikipedia.org/wiki/Poetry
 https://en.wikipedia.org/wiki/Television
 https://en.wikipedia.org/wiki/Visual_design_elements_and_principles
 
-Culture
+Culture:
 https://en.wikipedia.org/wiki/Culture
 https://en.wikipedia.org/wiki/Food
 https://en.wikipedia.org/wiki/Language
@@ -27,6 +27,14 @@ https://en.wikipedia.org/wiki/Pet
 https://en.wikipedia.org/wiki/Philosophy
 https://en.wikipedia.org/wiki/Sport
 https://en.wikipedia.org/wiki/Fashion
+https://en.wikipedia.org/wiki/Travel
+https://en.wikipedia.org/wiki/Crime
+
+Equality:
+https://en.wikipedia.org/wiki/Accessibility
+https://en.wikipedia.org/wiki/Disability
+
+
 
 Programming
 https://en.wikipedia.org/wiki/Android_software_development
