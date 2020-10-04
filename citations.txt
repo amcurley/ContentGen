@@ -1,5 +1,33 @@
 Pages used in topics
 
+Arts & Entertainment
+https://en.wikipedia.org/wiki/Art
+https://en.wikipedia.org/wiki/Book
+https://en.wikipedia.org/wiki/Comics
+https://en.wikipedia.org/wiki/Fiction
+https://en.wikipedia.org/wiki/Film
+https://en.wikipedia.org/wiki/Video_game
+https://en.wikipedia.org/wiki/Humour
+https://www.readersdigest.ca/culture/10-short-jokes-anyone-can-remember/
+https://en.wikipedia.org/wiki/Music
+https://en.wikipedia.org/wiki/Nonfiction
+https://en.wikipedia.org/wiki/Photography
+https://en.wikipedia.org/wiki/Podcast
+https://en.wikipedia.org/wiki/Poetry
+https://en.wikipedia.org/wiki/Television
+https://en.wikipedia.org/wiki/Visual_design_elements_and_principles
+
+Culture
+https://en.wikipedia.org/wiki/Culture
+https://en.wikipedia.org/wiki/Food
+https://en.wikipedia.org/wiki/Language
+https://en.wikipedia.org/wiki/Do_it_yourself
+https://en.wikipedia.org/wiki/Outdoor_recreation
+https://en.wikipedia.org/wiki/Pet
+https://en.wikipedia.org/wiki/Philosophy
+https://en.wikipedia.org/wiki/Sport
+https://en.wikipedia.org/wiki/Fashion
+
 Programming
 https://en.wikipedia.org/wiki/Android_software_development
 https://en.wikipedia.org/wiki/Data_science#:~:text=Data%20science%20is%20a%20%22concept,domain%20knowledge%20and%20information%20science.
@@ -15,7 +43,8 @@ https://en.wikipedia.org/wiki/Climate_change
 https://en.wikipedia.org/wiki/Mathematics
 https://en.wikipedia.org/wiki/Neuroscience
 https://en.wikipedia.org/wiki/Psychology
-
+https://en.wikipedia.org/wiki/Science
+https://en.wikipedia.org/wiki/Space
 
 
 

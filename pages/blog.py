@@ -91,10 +91,21 @@ def text_input(text):
 # Selecting one of the choices
 def boxes():
     option = st.selectbox('Select One Example Topic Below',
-    ('Choose a Topic', 'Android Dev', 'Data Science', 'iOS Dev',
-     'JavaScript', 'Machine Learning', 'Programming', 'Software Engineering', 'Biotech',
-     'Climate Change', 'Math', 'Neuroscience', 'Psychology', 'Science', 'Space',
-     ''
+    ('Choose a Topic',
+     # Arts & Entertainment
+     'Art', 'Books', 'Comics', 'Fiction', 'Film', 'Video Games', 'Humour', 'Music',
+     'Nonfiction', 'Photography', 'Podcasts', 'Poetry', 'TV', 'Visual Design', '====================================================',
+
+     # Culture
+     'Culture', 'Food', 'Langauge', 'Makers', 'Outdoors', 'Pets', 'Philosophy',
+     'Sports', 'Style', 'Travel', 'Crime', '====================================================', # These will have to leave
+
+
+     'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript',
+     'Machine Learning', 'Programming', 'Software Engineering',
+
+     'Biotech','Climate Change', 'Math', 'Neuroscience', 'Psychology', 'Science', 'Space',
+
      'Argentina', 'Technology', 'Boston Celtics', 'Hummus','Democrat', 'Republican',))
 
     if option == 'Choose a Topic':
