@@ -119,6 +119,10 @@ def boxes():
      'Creativity', 'Mindfulness', 'Money', 'Productivity', 'Writing',
      '====================================================',
 
+     #Politics
+     'Election 2020', 'Gun Control', 'Immigration', 'Justice', 'Politics',
+     '====================================================',
+
      # Programming
      'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript',
      'Machine Learning', 'Programming', 'Software Engineering',

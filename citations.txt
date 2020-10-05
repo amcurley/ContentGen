@@ -60,6 +60,19 @@ https://en.wikipedia.org/wiki/User_experience
 https://en.wikipedia.org/wiki/Venture_capital
 https://en.wikipedia.org/wiki/Work_(human_activity)
 
+Personal Development
+https://en.wikipedia.org/wiki/Creativity
+https://en.wikipedia.org/wiki/Mindfulness
+https://en.wikipedia.org/wiki/Money
+https://en.wikipedia.org/wiki/Productivity
+
+Politics
+https://en.wikipedia.org/wiki/2020_United_States_presidential_election
+https://en.wikipedia.org/wiki/Gun_control
+https://en.wikipedia.org/wiki/Immigration
+https://en.wikipedia.org/wiki/Justice
+https://en.wikipedia.org/wiki/Politics
+
 Programming
 https://en.wikipedia.org/wiki/Android_software_development
 https://en.wikipedia.org/wiki/Data_science#:~:text=Data%20science%20is%20a%20%22concept,domain%20knowledge%20and%20information%20science.
