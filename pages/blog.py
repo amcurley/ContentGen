@@ -94,14 +94,25 @@ def boxes():
     ('Choose a Topic',
      # Arts & Entertainment
      'Art', 'Books', 'Comics', 'Fiction', 'Film', 'Video Games', 'Humour', 'Music',
-     'Nonfiction', 'Photography', 'Podcasts', 'Poetry', 'TV', 'Visual Design', '====================================================',
+     'Nonfiction', 'Photography', 'Podcasts', 'Poetry', 'TV', 'Visual Design',
+     '====================================================',
 
      # Culture
      'Culture', 'Food', 'Langauge', 'Makers', 'Outdoors', 'Pets', 'Philosophy',
-     'Sports', 'Style', 'Travel', 'Crime', '====================================================', # These will have to leave
+     'Sports', 'Style', 'Travel', 'Crime',
+     '====================================================',
 
      # Equality
-     'Accessibility', 'Disability', 'Equality', 'Feminism', 'LGBTG+', 'Race',
+     'Accessibility', 'Disability', 'Equality', 'Feminism', 'LGBTQ+', 'Race',
+     '====================================================',
+
+     # Health
+     'Addiction', 'Coronavirus', 'Fitness', 'Health', 'Mental Health',
+     '====================================================',
+
+     # Industry
+     'Business', 'Design', 'Economy', 'Freelancing', 'Leadership', 'Marketing', 'Media',
+     'Product Management', 'Remote Work', 'Startups', 'UX', 'Venture Capital', 'Work',
      '====================================================',
 
      # Programming

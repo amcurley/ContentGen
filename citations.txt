@@ -33,7 +33,19 @@ https://en.wikipedia.org/wiki/Crime
 Equality:
 https://en.wikipedia.org/wiki/Accessibility
 https://en.wikipedia.org/wiki/Disability
+https://en.wikipedia.org/wiki/Equality
+https://en.wikipedia.org/wiki/Feminism
+https://en.wikipedia.org/wiki/LGBT
+https://en.wikipedia.org/wiki/Racism
 
+Health
+https://en.wikipedia.org/wiki/Addiction
+https://en.wikipedia.org/wiki/COVID-19_pandemic
+https://en.wikipedia.org/wiki/Physical_fitness
+https://en.wikipedia.org/wiki/Health
+https://en.wikipedia.org/wiki/Mental_health
+
+Industry
 
 
 Programming
