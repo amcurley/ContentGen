@@ -46,7 +46,19 @@ https://en.wikipedia.org/wiki/Health
 https://en.wikipedia.org/wiki/Mental_health
 
 Industry
-
+https://en.wikipedia.org/wiki/Business
+https://en.wikipedia.org/wiki/Design
+https://en.wikipedia.org/wiki/Economy
+https://en.wikipedia.org/wiki/Freelancer
+https://en.wikipedia.org/wiki/Leadership
+https://en.wikipedia.org/wiki/Marketing
+https://en.wikipedia.org/wiki/Media_(communication)
+https://en.wikipedia.org/wiki/Product_management
+https://en.wikipedia.org/wiki/Distributed_workforce
+https://en.wikipedia.org/wiki/Startup_company
+https://en.wikipedia.org/wiki/User_experience
+https://en.wikipedia.org/wiki/Venture_capital
+https://en.wikipedia.org/wiki/Work_(human_activity)
 
 Programming
 https://en.wikipedia.org/wiki/Android_software_development

@@ -115,6 +115,10 @@ def boxes():
      'Product Management', 'Remote Work', 'Startups', 'UX', 'Venture Capital', 'Work',
      '====================================================',
 
+     # Personal Development
+     'Creativity', 'Mindfulness', 'Money', 'Productivity', 'Writing',
+     '====================================================',
+
      # Programming
      'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript',
      'Machine Learning', 'Programming', 'Software Engineering',
