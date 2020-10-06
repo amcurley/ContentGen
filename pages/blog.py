@@ -124,11 +124,31 @@ def boxes():
      '====================================================',
 
      # Programming
-     'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript',
-     'Machine Learning', 'Programming', 'Software Engineering',
+     'Android Dev', 'Data Science', 'iOS Dev', 'JavaScript', 'Machine Learning',
+     'Programming', 'Software Engineering',
+     '====================================================',
 
-     'Biotech','Climate Change', 'Math', 'Neuroscience', 'Psychology', 'Science', 'Space',
+     # Science
+     'Biotech','Climate Change', 'Math', 'Neuroscience', 'Psychology',
+     'Science', 'Space',
+     '====================================================',
 
+     # Self
+     'Astrology', 'Beauty', 'Family', 'Lifestyle', 'Parenting', 'Relationships',
+     'Self', 'Sexuality', 'Spirituality',
+     '====================================================',
+
+     # Society
+     'Basic Income', 'Cannabis', 'Cities', 'Education', 'History', 'Psychedelics',
+     'Religion', 'San Francisco', 'Social Media', 'Society', 'Transportation', 'World',
+     '====================================================',
+
+     # Technology
+     'Artificial Intelligence', 'Blockchain', 'Cryptocurrency', 'Cybersecurity',
+     'Digital Life', 'Future', 'Gadgets', 'Privacy', 'Self Driving Cars', 'Technology',
+     '====================================================',
+
+     # Random
      'Argentina', 'Technology', 'Boston Celtics', 'Hummus','Democrat', 'Republican',))
 
     if option == 'Choose a Topic':
