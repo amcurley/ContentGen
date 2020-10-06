@@ -149,7 +149,7 @@ def boxes():
      '====================================================',
 
      # Random
-     'Argentina', 'Technology', 'Boston Celtics', 'Hummus','Democrat', 'Republican',))
+     'Argentina', 'Boston Celtics', 'Hummus','Democrat', 'Republican',))
 
     if option == 'Choose a Topic':
         return " "
