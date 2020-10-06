@@ -98,7 +98,7 @@ def boxes():
      '====================================================',
 
      # Culture
-     'Culture', 'Food', 'Langauge', 'Makers', 'Outdoors', 'Pets', 'Philosophy',
+     'Culture', 'Food', 'Language', 'Makers', 'Outdoors', 'Pets', 'Philosophy',
      'Sports', 'Style', 'Travel', 'Crime',
      '====================================================',
 
