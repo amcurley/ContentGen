@@ -2,21 +2,17 @@
 
 ## **Problem Statement:**
 
-The influencer marketing industry is expected to be worth 15 billion dollars by 2022 up from as much as 8 billion dollars from 2019 according to business insider. How can companies utilize this booming marketing channel without spending upwards of 100,000 - 500,000 dollar a year in influencer marketing? By creating and owning their own influencers. Instead of paying salaries for a photographer, videographer, editor, and models these companies can pay a monthly fee and get access to an infinite amount of computer generated content and influencers.  
+According to HubSpot companies spend 46% of their budget on content creation (HubSpot, 2017) and 24% of marketers plan on increasing their investment in content marketing in 2020 (HubSpot, 2020). Content creation is obviously a very important aspect of the overall marketing plan for company. There are usually a lot of moving pieces that go into creating an effective content marketing plan such as photographers, editors, videographers, models, writers, etc. With all of this being said, there is a faster approach to creating content at scale. That is through GANs (Generative Adversarial Networks) and natural language processing text transformers such as GPT-2. 
 
 
 ## **Project Layout**
 
 ### Creating the Computer Generated Influncer:
-There will be two parts of this project. The first part will be the computer generated influencer. I will be utilizing [StyleGan2](https://github.com/NVlabs/stylegan2) from NVIDIA. One will be for the face and the other will be for the body of the person. After those are generated I will merge the two together creating a final Instagram post. I can then take this person and put them in [vid2vid](https://github.com/NVIDIA/vid2vid) and create a generated dance much like the one here: [TikTok Video](https://vm.tiktok.com/ZMJD8tqGu/).
+There will be two parts of this project. The first part will be the computer generated influencer. I will be utilizing [StyleGan2](https://github.com/NVlabs/stylegan2) from NVIDIA. 
 
 
-### Creating the Tweet Generator:
-Onto the second part of the project. This step will be utilizing a Twitter bot to stream live tweets about a certain topic which will be art. The bot will feed the tweets in GPT-2 and then GPT-2 will be generate a response to that tweet and comment that resonspe back to the original tweet. Since this influencer will be interested in art I hope she can build influencer within this community over time evenually leading up to the ability to create and sell her own art.
-
-Down below is flowchart on how this process will work under the hood. As long as the bot is running the portion of the project should be able to run forever in the background eventually up on a server.
-
-![](./assets/02_tweet_generator_02.png)
+### Creating the Blog Post Generator:
+Onto the second part of the project. This section of the project will enable a user of my application to pick a topic out of any of the topics available on Medium and my application will generate a 300 word body of text that they can use.
 
 ## **Data**
 
