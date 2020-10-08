@@ -41,5 +41,13 @@ There will be two parts of this project. The first part will be the computer gen
 ### Creating the Blog Post Generator:
 Onto the second part of the project. This section of the project will enable a user of my application to pick a topic out of any of the topics available on Medium and my application will generate a 300 word body of text that they can use.
 
+### Conclusions and Final Steps  
+Using this technology can be the catalyst that enables companies to create more content than ever before. With the use of GANs companies can generate everything from faces to art work. With the use of GPT-2 and eventually GPT-3 companies will be able to generate almost perfect blog posts with a click of a button. The question to ask is not if companies will use this or not, it is when will companies begin using this? and will we even know that they are? This brings up the ethical concerns of using these generative models for content is right or not. This will be up to the end user/company to decide. 
+
+Improving the effectiveness and quality of these models will happen in due time. With the release of GPT-3 the blogs that are being generated should be around 100x better since the models are trained on 100x more data. Improving the influencer generation will happen when the time and cost of creating these videos decreases. With the public release of GPT-3 approaching I will be able to use this newer model to generate more coherent sentences and paragraphs. Additionally I would like to add a feature to the webapp where a user can interact with the latent space of the GAN, allowing the user to control the features of the image such as glasses or no glasses, female or male, long hair or bangs, etc. 
+
 ### Sources
-[HubSpot Content Marketing Statistics](https://www.hubspot.com/marketing-statistics)
+[HubSpot Content Marketing Statistics](https://www.hubspot.com/marketing-statistics)  
+[Medium Topic Primer](https://github.com/amcurley/ContentGen/blob/master/citations.txt)  
+[StyleGan2](https://github.com/NVlabs/stylegan2)    
+[GPT-2](https://github.com/openai/gpt-2)
